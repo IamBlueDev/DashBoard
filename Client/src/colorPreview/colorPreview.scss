@@ -1,0 +1,44 @@
+@import '../palette.scss';
+.colorPreview {
+    position: absolute;
+    z-index: 1;
+    top: 20rem;
+    left: 400px;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    >.pal {
+        >* {
+            padding: 1rem;
+        }
+        .color1 {
+            background: $color1;
+        }
+        .color2 {
+            background: $color2;
+        }
+        .color3 {
+            background: $color3;
+        }
+        .color4 {
+            background: $color4;
+        }
+        .color5 {
+            background: $color5;
+        }
+    }
+    >.color1 {
+        background: $color1;
+        color: $color5;
+        font-weight: 400;
+    }
+    >.color2 {
+        background: $color2;
+        color: $color4;
+        font-weight: 400;
+    }
+    // >.color2 {
+    //     background: $color4;
+    //     color: $color1;
+    // }
+}

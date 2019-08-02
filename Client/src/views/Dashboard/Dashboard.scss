@@ -1,0 +1,60 @@
+@import '../../palette.scss';
+.DashBoard {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    >.sideNav {
+        float: left;
+        background: $color2;
+        height: 100vh;
+        width: 15rem;
+        color: $color4;
+        font-weight: 400;
+        >.Logo {
+            padding: 1rem 0 10px 0;
+        }
+        >.buttons {
+            background: rgba(white, 0.0);
+            ul {
+                overflow: hidden;
+                width: 100%;
+                padding: 0 0 0 0;
+                list-style-type: none;
+            }
+            display: flex;
+            li {
+                padding-left: 1rem;
+                text-align: left;
+                width: 100%;
+                &:hover {
+                    background: $color1;
+                }
+            }
+        }
+        >.footer {
+            background: $color1;
+            height: 100%;
+            margin: 2rem 0 0 0;
+        }
+    }
+    >.userBar {
+        background: $color2;
+        z-index: -1;
+        width: 90vw;
+        margin: 0 0 0 15rem;
+        height: 3rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $color4;
+        font-weight: 400;
+    }
+    .content {
+        margin: 4rem 0 0 16rem;
+        width: 85vw;
+        height: 100vh;
+        background: $color1;
+        color: $color5;
+        font-weight: 400;
+    }
+}
